@@ -1,6 +1,32 @@
-[{"id": "9I_3UkgOu",
- "name": "pepermint"},
- {"id": "46Juzcyx",
- "name": "green"},
- {"id": "1jQpyURE5",
-  "name": "dBvJIh-H"}]
+[
+  {
+    "id": "46Juzcyx",
+    "name": "chocolate",
+    "available": true,
+    "rate": "5"
+  },
+  {
+    "id": "23TplPdS",
+    "name": "candy",
+    "available": false,
+    "rate": "5"
+  },
+  {
+    "id": "O9vkQudF5",
+    "name": "cake",
+    "available": true,
+    "rate": "4"
+  },
+  {
+    "id": "HymCHqE0U",
+    "name": "corndog",
+    "available": false,
+    "rate": "3"
+  },
+  {
+    "id": "2-YAawCDi",
+    "name": "caramel",
+    "available": false,
+    "rate": "5"
+  }
+]
