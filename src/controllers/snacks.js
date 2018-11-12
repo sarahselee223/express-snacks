@@ -10,6 +10,7 @@ function readAll (req, res, next){
 function readOne (req, res, next){
     const snack = snackModel.getOne(req.params.snackid)
     
+    if(snack.error) return next({status: 404, message: snack.error })
     res.send(snack)
 }
 
@@ -23,12 +24,16 @@ function editOne (req, res, next){
     const id = req.params.snackid
     const snack = snackModel.editOne(id, req.body.name, req.body.available, req.body.rate)
 
+    // handle error if snack does not exist
+
     res.send(snack)
 }
 
 function deleteOne (req, res, next){
     const id = req.params.snackid
     const deleteSnack = snackModel.deleteOne(id)
+
+    // handle error if snack does not exist
 
     res.send(deleteSnack)
 }
